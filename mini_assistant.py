@@ -91,6 +91,22 @@ def mini_assist(audio):
         print('Opening Duck Duck Go...')
         wb.get().open_new_tab(url)
         
+    elif 'excel' in audio.lower():
+        path = "C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE"
+        print('Opening MS Excel....')
+        sb.call(path)
+        
+    elif 'word' in audio.lower():
+        path = "C:\\Program Files\\Microsoft Office\\root\\Office16\\WINWORD.EXE"
+        print('Opening MS Word....')
+        sb.call(path)
+        
+    elif 'powerpoint' in audio.lower():
+        path = "C:\\Program Files\\Microsoft Office\\root\\Office16\\POWERPNT.EXE"
+        print('Opening MS PowerPoint....')
+        sb.call(path)
+        
+   
 
 r = sr.Recognizer()
 
